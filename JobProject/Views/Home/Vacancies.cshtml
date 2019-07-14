@@ -1,0 +1,32 @@
+﻿@model JobProject.Models.Vakansiya
+    @{
+        Layout = null;
+    }
+
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        @Html.Partial("Links")
+        <title>Vacancies</title>
+    </head>
+    <body>
+        @Html.Partial("Header")
+        <div class="card">
+            <div class="card-header">
+                Featured
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">@Model.VakAd</h5>
+                <p class="card-text">@Model.VakHaqqinda</p>
+                <p class="card-text">$@Model.VakMaas</p>
+                <p class="card-text">@Model.VakSeher</p>
+                <p class="card-text">@Model.VakSirket</p>
+                <p class="card-text">@Model.VakDate</p>
+            </div>
+        </div>
+        @Html.Partial("Footer")
+        @Html.Partial("Scripts")
+    </body>
+</html>
